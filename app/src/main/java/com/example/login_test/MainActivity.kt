@@ -1,6 +1,6 @@
 package com.example.login_test
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -10,6 +10,8 @@ import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+
+
 
 class MainActivity : AppCompatActivity() {
     val mAuth = FirebaseAuth.getInstance()
@@ -33,14 +35,14 @@ login()
             this.mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener ( this, OnCompleteListener<AuthResult> { task ->
                 if (task.isSuccessful) {
                //     startActivity(Intent(this, Timeline::class.java))
-                    Toast.makeText(this, "Successfully Logged in :)", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "mrgla ", Toast.LENGTH_LONG).show()
                 } else {
-                    Toast.makeText(this, "Error Logging in :(", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "thabett", Toast.LENGTH_SHORT).show()
                 }
             })
 
         }else {
-            Toast.makeText(this, "Please fill up the Credentials :|", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "8alet", Toast.LENGTH_SHORT).show()
         }
     }
 }
